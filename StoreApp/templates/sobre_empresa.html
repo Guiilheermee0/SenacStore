@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block Titulo %}  Senac Store {% endblock Titulo %}
+{% block Conteudo %}
+
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Sobre a empresa</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Os melhores produtos com os melhores preços!</p>
+        </div>
+    </div>
+</header>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: whitesmoke;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1{
+            color: whitesmoke;
+        }
+
+        h2{
+            color: black;
+
+        }
+
+        p {
+            color: gray;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+
+    <main>
+        <section>
+            <h2>Sobre Nós</h2>
+            <p>Somos uma empresa dedicada a fornecer soluções inovadoras para nossos clientes. Com uma equipe qualificada e comprometida, buscamos a excelência em todos os aspectos do nosso trabalho.</p>
+        </section>
+
+        <section class="contact-info">
+            <h2>Informações de Contato</h2>
+            <p><strong>Razão Social:</strong> Nome da Sua Empresa</p>
+            <p><strong>CNPJ:</strong> 00.000.000/0000-00</p>
+            <p><strong>Endereço:</strong> Rua da Empresa, 123 - Bairro - Cidade</p>
+            <p><strong>Telefone:</strong> (00) 1234-5678</p>
+            <p><strong>Email:</strong> contato@empresa.com.br</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Minha Empresa. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
+
+{% endblock Conteudo %}
