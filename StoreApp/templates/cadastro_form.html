@@ -3,9 +3,7 @@
 {% load crispy_forms_filters %}
 {% load crispy_forms_tags %}
 
-{% block Titulo %}
-  Fale Conosco
-{% endblock %}
+{% block Titulo %} Login {% endblock %}
 
 {% block Conteudo %}
   <header class="bg-light py-1">
@@ -24,10 +22,10 @@
             {{mensagem}}          
         </div>
        {%endif%}
-        <form action=" {% url 'contato' %}" method="post">
+        <form action=" {% url 'cadastro' %}" method="post">
         {% csrf_token %}
         <div class="col-md-6 offset-md-3">
-          {{ form_contato|crispy}}
+          {{form_cadastro|crispy}}
           <input type="submit" value="Enviar" class="btn btn-dark">
         </div>
       </form>
