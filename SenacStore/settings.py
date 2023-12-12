@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'StoreApp',
     'crispy_forms',
-	'crispy_bootstrap5'
+	'crispy_bootstrap5',
+    'cloudinary_storage',
+	'cloudinary'
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
@@ -142,3 +144,10 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'senacguilherme13@gmail.com'
 EMAIL_HOST_PASSWORD = 'auzq usyq tlne sdrr'
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'de0nmwiti',
+    'API_KEY': '327378133756516',
+    'API_SECRET': '5Xk3Ce5ADq0_DpRww6QGKllY9k0',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
